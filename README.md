@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jayapriya90/go-ok.svg?branch=master)](https://travis-ci.org/jayapriya90/go-ok)  [![Go Report Card](https://goreportcard.com/badge/github.com/jayapriya90/go-ok)](https://goreportcard.com/report/github.com/jayapriya90/go-ok)
+
 Description
 -----------
 `go-ok` takes an input file which has a list of IP addresses and port and checks if
@@ -14,12 +16,15 @@ $ go-ok -fpath=<path to input file>
 
 Sample Input/Output
 -------------------
+```
 $ go-ok -fpath=input.txt  
-Input: [216.58.195.78:80 151.101.193.69:80 172.217.3.17:80]  
 HTTP GET is successful for  
 216.58.195.78:80  
 172.217.3.17:80
 
+
+$ go-ok -fpath=input.txt >> output.txt
+```
 
 
 

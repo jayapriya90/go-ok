@@ -12,7 +12,6 @@ import (
 
 var (
 	filepath = flag.String("fpath", "input.txt", "input file path")
-	persist  = flag.Bool("persist", false, "save the contents")
 )
 
 func main() {
@@ -45,7 +44,7 @@ func main() {
 		fmt.Fprintln(os.Stderr, "reading standard input:", err)
 	}
 	// for debugging
-	fmt.Printf("Input: %v \n", hostPorts)
+	// fmt.Printf("Input: %v \n", hostPorts)
 
 	// timeout after 5 seconds
 	client := http.Client{
